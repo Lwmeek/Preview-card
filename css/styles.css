@@ -33,24 +33,27 @@ body {
 	width: 90%;
 	margin: auto;
 }
-.img_view{
+.img_view {
 	display: block;
 	opacity: 0;
 	margin: 0 auto;
 	position: relative;
 	top: 18rem;
 	z-index: 1;
+	transition: opacity 0.3s;
 }
 .main_img {
 	border-radius: 10px;
 	width: 100%;
 	display: block;
 	margin: 0 auto 1rem;
+	transition: filter 0.1s;
 }
 h1 {
 	color: var(--color-white);
 	font-size: 2.3rem;
 	font-weight: 600;
+	transition: color 0.3s;
 }
 .body_info {
 	font-size: 1.8rem;
@@ -90,12 +93,15 @@ h1 {
 	font-size: 1.7rem;
 	font-weight: 300;
 }
-.header_content:hover .img_view{
+.creator_name {
+	transition: color 0.3s;
+}
+.header_content:hover .img_view {
 	opacity: 100;
 }
-.header_content:hover .main_img{
-		filter: invert(90%) sepia(100%) saturate(1565%) hue-rotate(135deg)
-			brightness(90%) contrast(102%);
+.header_content:hover .main_img {
+	filter: invert(90%) sepia(100%) saturate(1565%) hue-rotate(135deg)
+		brightness(90%) contrast(102%);
 }
 h1:hover {
 	color: var(--color-cyan);
