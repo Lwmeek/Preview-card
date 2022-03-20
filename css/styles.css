@@ -27,55 +27,79 @@ body {
 	border-radius: 15px;
 	width: 35rem;
 }
-.layout{
+.layout {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
 	margin: auto;
 }
-.header_content img {
+.img_view{
+	display: block;
+	opacity: 0;
+	margin: 0 auto;
+	position: relative;
+	top: 18rem;
+	z-index: 1;
+}
+.main_img {
 	border-radius: 10px;
 	width: 100%;
 	display: block;
-	margin: 2rem auto;
+	margin: 0 auto 1rem;
 }
-h1{
+h1 {
 	color: var(--color-white);
 	font-size: 2.3rem;
 	font-weight: 600;
 }
-.body_info{
+.body_info {
 	font-size: 1.8rem;
 	font-weight: 300;
 }
-.stats{
+.stats {
 	display: flex;
 	gap: 11rem;
 	font-weight: 400;
 	border-bottom: 1px solid var(--color-line);
 }
-.stat_one{
+.stat_one {
 	color: var(--color-cyan);
 }
-.stat_one, .stat_two{
+.stat_one,
+.stat_two {
 	margin-bottom: 2.5rem;
 }
-.special_words, .body_info, .stat_two{
+.special_words,
+.body_info,
+.stat_two {
 	color: var(--color-soft_blue);
 }
-.footer_content{
+.footer_content {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
 }
-.footer_img{
+.footer_img {
 	width: 4rem;
 	height: 4rem;
 }
-.footer_creator{
+.footer_creator {
 	color: var(--color-white);
 	font-size: 1.7rem;
 	font-weight: 300;
+}
+.header_content:hover .img_view{
+	opacity: 100;
+}
+.header_content:hover .main_img{
+		filter: invert(90%) sepia(100%) saturate(1565%) hue-rotate(135deg)
+			brightness(90%) contrast(102%);
+}
+h1:hover {
+	color: var(--color-cyan);
+}
+.creator_name:hover {
+	color: var(--color-cyan);
 }
